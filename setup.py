@@ -11,7 +11,8 @@ def setup_package():
         packages=find_packages(),
         include_package_data=True,
         install_requires=["youtube_transcript_api", "transformers", "sentencepiece",
-                          "deepmultilingualpunctuation", "pysbd"]
+                          "deepmultilingualpunctuation", "pysbd"],
+        package_data={"": ["data/*.csv"]}
     )
 
 
